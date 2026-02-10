@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>팔로워십 유형 검사</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>팔로워십 유형 검사</h1>
+        <div class="intro">
+          <p><strong>[유형 결과 확인 시 주의사항]</strong></p>
+          <p>
+            1990년대 초 번안된 학술용어이기 때문에 유형 지칭이 다소 편향적
+            입니다. 따라서 '수동', '소외' 등 단어가 주는 부정적 느낌 때문에
+            위축되지 마세요!
+          </p>
+          <p>
+            팔로워십 유형은 고정된 게 아니고, 근무 환경, 리더 유형 등에 따라
+            변화합니다. 나는 어떤 상황일 때, 어떤 업무를 할 때, 어떤 리더와
+            함께할 때 '모범형'의 모습이 되는지 고민해보시면, 스스로에게도
+            팀에게도 도움이 될 거예요!
+          </p>
+        </div>
+      </header>
+
+      <form id="test-form">
+        <div id="questions-container">
+          <!-- Questions will be inserted here by JavaScript -->
+        </div>
+
+        <button type="submit" class="submit-btn" disabled>결과 확인하기</button>
+      </form>
+
+      <div id="result-section" class="hidden">
+        <h2>검사 결과</h2>
+        <div class="scores">
+          <p>독립적, 비판적 사고 (세로축): <span id="score-y">0</span>점</p>
+          <p>적극적, 능동적 행동 (가로축): <span id="score-x">0</span>점</p>
+        </div>
+
+        <div class="chart-container">
+          <img src="image1.png" alt="팔로워십 유형 그래프" id="result-chart" />
+          <div id="result-dot"></div>
+        </div>
+
+        <div class="interpretation">
+          <h3>유형 해석</h3>
+          <img
+            src="image2.png"
+            alt="팔로워십 유형 해석"
+            id="interpretation-image"
+          />
+          <p>
+            위 그래프에서 본인의 위치를 확인하고, 해당 유형에 대한 설명을
+            참고하세요.
+          </p>
+        </div>
+
+        <button id="retry-btn">다시 하기</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
